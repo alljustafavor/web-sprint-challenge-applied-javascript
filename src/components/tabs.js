@@ -15,18 +15,8 @@ const Tabs = (topics) => {
   //
 
   const tabWrapper = document.createElement('div');
-  const jsTab = document.createElement('div');
-  const bsTab = document.createElement('div');
-  const techTab = document.createElement('div');
-
-  tabWrapper.appendChild(jsTab);
-  tabWrapper.appendChild(bsTab);
-  tabWrapper.appendChild(techTab);
-
   tabWrapper.classList.add('topics');
-  jsTab.classList.add('tab');
-  bsTab.classList.add('tab');
-  techTab.classList.add('tab');
+  
 
   return tabWrapper; // forgot to do this on header lol
 }
