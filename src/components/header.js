@@ -20,9 +20,14 @@ header.appendChild(headerDate);
 header.appendChild(headerTitle);
 header.appendChild(headerTemp);
 
+
 header.classList.add("header")
 headerDate.classList.add("date");
 headerTemp.classList.add("temp");
+
+headerDate.textContent = date;
+headerTitle.textContent = title;
+headerTemp.textContent = temp;
 
 }
 
@@ -39,6 +44,9 @@ const headerAppender = (selector) => {
   // We are taking care of passing in the correct selector on line 16,
   // so all that you need to do is pass it into the querySelector method
   // for the tests to work!
+
+  const entryPoint = document.querySelector('.header-container');
+  
 }
 
 export { Header, headerAppender }
