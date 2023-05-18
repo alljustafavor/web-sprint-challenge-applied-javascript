@@ -20,6 +20,9 @@ header.appendChild(headerDate);
 header.appendChild(headerTitle);
 header.appendChild(headerTemp);
 
+header.classList.add("header")
+headerDate.classList.add("date");
+headerTemp.classList.add("temp");
 
 }
 
