@@ -1,3 +1,4 @@
+import axios from "axios";
 const Tabs = (topics) => {
   // TASK 3
   // ---------------------
@@ -16,6 +17,13 @@ const Tabs = (topics) => {
 
   const tabWrapper = document.createElement('div');
   tabWrapper.classList.add('topics');
+
+  topics.forEach(topic => {
+    const tab = document.createElement('div');
+    tab.classList.add('tab');
+    tab.textContent = topic;
+    tabWrapper.appendChild(tab);
+  });
   
 
   return tabWrapper; // forgot to do this on header lol
