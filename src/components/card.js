@@ -24,6 +24,17 @@ const Card = (article) => {
   const cardImgURL = document.createElement('img');
   const cardName = document.createElement('span');
 
+  card.appendChild(cardHeadline);
+  card.appendChild(cardAuthor);
+  cardAuthor.appendChild(cardImg);
+  cardAuthor.appendChild(cardImgURL);
+  cardAuthor.appendChild(cardName);
+
+  card.classList.add('card');
+  cardHeadline.classList.add('headline');
+  cardAuthor.classList.add('author');
+  cardImg.classList.add('img-container');
+  
   
 
 
