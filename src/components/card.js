@@ -17,6 +17,18 @@ const Card = (article) => {
   //   </div>
   // </div>
   //
+  const card = document.createElement('div');
+  const cardHeadline = document.createElement('div');
+  const cardAuthor = document.createElement('div');
+  const cardImg = document.createElement('div');
+  const cardImgURL = document.createElement('img');
+  const cardName = document.createElement('span');
+
+  
+
+
+
+  return card
 }
 
 const cardAppender = (selector) => {
