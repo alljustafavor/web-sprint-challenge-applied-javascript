@@ -16,7 +16,9 @@ const headerDate = document.createElement('span');
 const headerTitle = document.createElement('h1');
 const headerTemp = document.createElement('span');
 
-
+header.appendChild(headerDate);
+header.appendChild(headerTitle);
+header.appendChild(headerTemp);
 
 
 }
